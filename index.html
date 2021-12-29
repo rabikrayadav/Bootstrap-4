@@ -1,104 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bootstrap 4</title>
-	<link rel="stylesheet" href="css/Bootstrap.css">
-</head>
-<body>
-
-<header class="container-fluid text-center text-success"><h2>Learn Bootstrap 4 From W3School.com</h2>
-<p class="blockquote-footer"><a href="https://rabikrishnayadav.com.np">Rabi Kr Yadav</a></p>
-</header><hr> 
-
-
-<dl><h3>Bootstrap 4 class name with their examples</h3>
-	<dt>.container</dt>
-	<dd>.container class provides a responsive fixed width container <br>Example:
-		<div class="container" style="background-color: seagreen; height: 100px;">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Bootstrap 4</title>
+		<link rel="stylesheet" href="css/Bootstrap.css">
+	</head>
+	<body>
+		<header class="container-fluid text-center text-success"><h2>Learn Bootstrap 4 From W3School.com</h2>
+			<p class="blockquote-footer"><a href="https://rabikrishnayadav.com.np">Rabi Kr Yadav</a></p>
+		</header><hr>
+		<dl><h3>Bootstrap 4 class name with their examples</h3>
+			<dt>.container</dt>
+			<dd>.container class provides a responsive fixed width container <br>Example:
+			<div class="container" style="background-color: seagreen; height: 100px;">
+			</div>
+			</dd>
+			<dt>.container-fliud</dt>
+			<dd>.container-fluid class provides a full width container,spanning the entire width of the viewport<br>Example:
+			<div class="container-fluid" style="background-color: darkred; height: 100px;">
+			</div>
+			</dd>
+		</dl>
+		
+		<div class="container">
+			
+			<h3>Bootstrap predefined colors class names for text & background</h3>
+			<ul>
+				<li>For Text Colors Examples</li>
+				<ol>
+					<li class="text-primary">text-primary</li>
+					<li class="text-secondary">text-secondary</li>
+					<li class="text-success">text-success</li>
+					<li class="text-info">text-info</li>
+					<li class="text-warning">text-warning</li>
+					<li class="text-danger">text-danger</li>
+					<li class="text-white">text-white</li>
+					<li class="text-dark">text-dark</li>
+					<li class="text-light">text-light</li>
+					<li class="text-muted">text-muted</li>
+					<li class="text-"></li>
+				</ol>
+				<li>For Background Color Examples</li>
+				<ol>
+					<li class="bg-primary">bg-primary</li>
+					<li class="bg-secondary">bg-secondary</li>
+					<li class="bg-success">bg-success</li>
+					<li class="bg-info">bg-info</li>
+					<li class="bg-warning">bg-warning</li>
+					<li class="bg-danger">bg-danger</li>
+					<li class="bg-light">bg-light</li>
+					<li class="bg-dark">bg-dark</li>
+				</ol>
+			</ul>
 		</div>
-	</dd>
-
-	<dt>.container-fliud</dt>
-	<dd>.container-fluid class provides a full width container,spanning the entire width of the viewport<br>Example:
-
-		<div class="container-fluid" style="background-color: darkred; height: 100px;">
+		<br><hr>
+		<div class="container">
+			<h2>Some tags</h2>
+			<ul>
+				<li>KBD</li>Example: <kbd>ctr + f</kbd> <kbd class="bg-success">save</kbd>
+				<li>code</li> Example: <code>this is code tag example</code>
+				<li>pre</li> Example: <pre>hey    this is     example of pre tag</pre>
+			</ul>
 		</div>
+		<hr>
+		<div class="container">
+			<h3>Grid System</h3>
+			The grid system is responsive,  and the column will re-arrange automatically depending on the screen size.<br>
+			Bootstrap allows up to 12 column acress the page.<br>
+			If we do not want to use all 12 columns individually, we can group the columns together to create wider columns.
+			<ul>
+				<h4>Grid Classes</h4>
+				<li>.col-</li>(extra small devices - screen width less than 576px)
+				<li>.col-sm-</li>(small devices -screen width equal to or greater than 576px)
+				<li>.col-md-</li>(medium devices - screen width equal to or greater than 768px)
+				<li>.col-lg-</li>(large devices - screen width equal to or greater than 992px)
+				<li>.col-xl</li>(Extra large devices -screen width equal to or greater than 1200px)
+			</ul>
+			<h3>Example</h3>
+			<div class="row">
+				<div class="col-xl-12 bg-secondary">span 1</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-6 bg-primary">span 1</div>
+				<div class="col-xl-6 bg-secondary">span 1</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-4 bg-secondary">Span 1</div>
+				<div class="col-xl-4 bg-primary">Span 1</div>
+				<div class="col-xl-4 bg-warning">Span 1</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-3 bg-warning">span 1</div>
+				<div class="col-xl-3 bg-success">span 1</div>
+				<div class="col-xl-3 bg-secondary">span 1</div>
+				<div class="col-xl-3 bg-primary">span 1</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-2 bg-dark">Span 1</div>
+				<div class="col-xl-2 bg-secondary">Span 1</div>
+				<div class="col-xl-2 bg-danger">Span 1</div>
+				<div class="col-xl-2 bg-primary">Span 1</div>
+				<div class="col-xl-2 bg-transparent">Span 1</div>
+				<div class="col-xl-2 bg-warning">Span 1</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-1 bg-secondary">span 1</div>
+				<div class="col-xl-1 bg-success">span 1</div>
+				<div class="col-xl-1 bg-secondary">span 1</div>
+				<div class="col-xl-1 bg-success">span 1</div>
+				<div class="col-xl-1 bg-secondary">span 1</div>
+				<div class="col-xl-1 bg-success">span 1</div>
+				<div class="col-xl-1 bg-secondary">span 1</div>
+				<div class="col-xl-1 bg-success">span 1</div>
+				<div class="col-xl-1 bg-secondary">span 1</div>
+				<div class="col-xl-1 bg-success">span 1</div>
+				<div class="col-xl-1 bg-secondary">span 1</div>
+				<div class="col-xl-1 bg-success">span 1</div>
+			</div>
+			<br><<br><br><br>
+			<hr><h3>Another Example</h3>
+			<div class="row">
+				<div class="col-xl-4 bg-primary">col-xl-4</div>
+				<div class="col-xl-4 bg-secondary">col-xl-4</div>
+				<div class="col-xl-4 bg-success">col-xl-4</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 bg-primary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 bg-secondary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 bg-success">col-xl-4</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-4 bg-primary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 bg-secondary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 bg-success">col-xl-4</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 bg-primary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 bg-secondary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 bg-success">col-xl-4</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 bg-primary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 bg-secondary">col-xl-4</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 bg-success">col-xl-4</div>
+			</div>
+		</div>
+<br><br><hr><br>
 
-	</dd>
-</dl>
-	
-<div class="container">
-	
-
-	<h3>Bootstrap predefined colors class names for text & background</h3>
-
-	<ul>
-		<li>For Text Colors Examples</li>
-			<ol>
-				<li class="text-primary">text-primary</li>
-				<li class="text-secondary">text-secondary</li>
-				<li class="text-success">text-success</li>
-				<li class="text-info">text-info</li>
-				<li class="text-warning">text-warning</li>
-				<li class="text-danger">text-danger</li>
-				<li class="text-white">text-white</li>
-				<li class="text-dark">text-dark</li>
-				<li class="text-light">text-light</li>
-				<li class="text-muted">text-muted</li>
-				<li class="text-"></li>
-			</ol>
-		<li>For Background Color Examples</li>
-		<ol>
-			<li class="bg-primary">bg-primary</li>
-			<li class="bg-secondary">bg-secondary</li>
-			<li class="bg-success">bg-success</li>
-			<li class="bg-info">bg-info</li>
-			<li class="bg-warning">bg-warning</li>
-			<li class="bg-danger">bg-danger</li>
-			<li class="bg-light">bg-light</li>
-			<li class="bg-dark">bg-dark</li>
-		</ol>
-	</ul>
-
-</div>
-
-
-<br><hr>
-<div class="container">
-<h2>Some tags</h2>
-<ul>
-	<li>KBD</li>Example: <kbd>ctr + f</kbd> <kbd class="bg-success">save</kbd>
-	<li>code</li> Example: <code>this is code tag example</code>
-	<li>pre</li> Example: <pre>hey    this is     example of pre tag</pre>
-</ul>
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+	</body>
 </html>
