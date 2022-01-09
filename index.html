@@ -385,8 +385,38 @@
 		</div>
 		<div class="jumbotron" id="myJumbo">
 			<h1 class="text-white">This is the example of jumbotrone</h1>
+		</div><hr><br>
+		<div class="container"><h1 class="text-center font-weight-bold">Carousel Slider</h1>
+			<div class="carousel slide" id="myslider" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="img/banner.jpg" alt="images">
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner1.jpg" alt="images">
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner2.jpeg" alt="images">
+					</div>
+					<div class="carousel-item active">
+						<img src="img/banner3.jpg" alt="images">
+					</div>
+				</div>
+				<ul class="carousel-indicators">
+					<li data-target="#myslider" data-slide-to="0" class="active"></li>
+					<li data-target="#myslider" data-slide-to="1"></li>
+					<li data-target="#myslider" data-slide-to="2"></li>
+					<li data-target="#myslider" data-slide-to="3"></li>
+				</ul>
+				<a href="#myslider" data-slide="prev" class="carousel-control-prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a href="#myslider" data-slide="next" class="carousel-control-next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
 		</div>
-		<br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
