@@ -231,7 +231,7 @@
 <div class="container-fluid">
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 		<div class="container">
-			<a href="#" class="navbar-brand">Vidsik</a>
+			<a href="#" class="navbar-brand">NavBar</a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -254,7 +254,37 @@
 		</div>
 	</nav>
 </div>
-<br><br><br><br><br><br><br><br><br>
+<br>
+
+<div class="container">
+	<h3>Responsive Image Classes</h3>
+	1) The .rounded class adds rounded corner to an image.<br>
+	2) The .rounded-circle class shapes to the image to a circle<br>
+	3) The .img-thumbnail class shapes the image to a thumbnail(bordered)<br>
+	Float an image to the right with the .float-right class or to the left with .float-left<br>
+	Create responsive images by adding<br>
+	4) The .img-fluid class to the img tag. The image will then scale nicely to the parent element.<br>
+	The .img-fluid class applies max-width:100% and height: auto; to the image.<br>
+	Examples:<br>
+	<div class="row">
+		<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+			<img src="img/img.jpg" class="img-fluid rounded">
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+			<img src="img/img1.jpg" class="img-fluid rounded-circle">
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+			<img src="img/img2.jpg" class="img-fluid img-thumbnail">
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+			<img src="img/img.jpg" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br>
 
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
